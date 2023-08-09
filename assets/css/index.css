@@ -634,7 +634,7 @@ body.light .scroll-top-button {
 
 .texto-about h2 {
     font-size: 3em;
-    color: var(--accent-color-variable-light-mode);
+    color: var(--accent-color-variable-dark-mode);
     transition: 0.3s ease-in-out;
 }
 
@@ -822,10 +822,14 @@ body.light .item p {
     position: absolute;
     height: 100%;
     width: 70%;
-    background-color: var(--background-color-variable);
+    background-color: #2c3936;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+body.light .container-servicios {
+    background-color: #b9fff0;
 }
 
 .container-cards {
@@ -858,6 +862,10 @@ body.light .item p {
 .servicios-ofrecemos span {
     font-size: 1.8em;
     color: var(--main-color-dark-mode);
+}
+
+body.light .servicios-ofrecemos span {
+    color: var(--main-background-color-dark-mode);
 }
 
 .card {
@@ -1710,7 +1718,7 @@ body.light .circle-6 {
 
 .descripcion-equipo-h2 {
     font-size: 3em;
-    color: var(--accent-color-dark-mode);
+    color: var(--accent-color-variable-dark-mode);
     padding-bottom: 1rem;
     animation-delay: 0.3s;
 }
@@ -1874,7 +1882,7 @@ body.light .evento4 {
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 1.8em;
-    color: var(--accent-color-dark-mode);
+    color: var(--accent-color-variable-dark-mode);
 }
 
 body.light .fecha {
@@ -2451,7 +2459,7 @@ body.light .bottom-card-planes li {
 
 .funcionamiento h3 {
     font-size: 2.5em;
-    color: var(--accent-color-dark-mode);
+    color: var(--accent-color-variable-dark-mode);
     padding-bottom: 2rem;
 }
 
@@ -2472,7 +2480,7 @@ body.light .funcionamiento p {
 
 .tips-no-funciona h3 {
     font-size: 2.5em;
-    color: var(--accent-color-dark-mode);
+    color: var(--accent-color-variable-dark-mode);
     padding-bottom: 2rem;
 }
 
@@ -2633,611 +2641,6 @@ body.light .medidor {
         visibility: visible;
         transform: translateY(0);
     }
-}
-
-/* PÁGINA TELEFONÍA -------------------------------------------------------------------- */
-/*seccion planes*/
-.planes-tel {
-    max-width: 150rem;
-    min-height: 100vh;
-    margin: 0 auto;
-    position: relative;
-}
-
-.titulo-planes {
-    padding-top: 10rem;
-}
-
-/* PÁGINA EDUCACION -------------------------------------------------------------------- */
-/*seccion educacion*/
-.educacion {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle-9 {
-    top: 60%;
-    right: 10%;
-    background-color: var(--accent-color-dark-mode);
-}
-
-body.light .circle-9 {
-    background-color: var(--accent-color-light-mode-variable);
-}
-
-.dialogo6 {
-    position: absolute;
-    top: 60%;
-    right: 15%;
-    padding: 1rem;
-    width: 20rem;
-    height: 7rem;
-    border-radius: 1rem;
-    background-color: var(--accent-color-dark-mode);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
-    visibility: hidden;
-    animation: dropInWsp 1s ease-in-out 1s forwards;
-}
-
-body.light .dialogo6 {
-    background-color: var(--accent-color-variable-light-mode);
-    box-shadow: 0 8px 32px 0 rgba(213, 213, 213, 0.825);
-}
-
-.dialogo6 p {
-    font-size: 1.8em;
-    color: var(--main-color-light-mode);
-    font-weight: 200;
-}
-
-.dialogo7 {
-    position: absolute;
-    top: 70%;
-    right: 22%;
-    padding: 1rem;
-    width: 20rem;
-    height: 7rem;
-    border-radius: 1rem;
-    background-color: var(--main-color-dark-mode);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
-    visibility: hidden;
-    animation: dropInWsp 1s ease-in-out 2s forwards;
-}
-
-body.light .dialogo7 {
-    box-shadow: 0 8px 32px 0 rgba(213, 213, 213, 0.825);
-}
-
-.dialogo7 a {
-    font-size: 1.8em;
-    color: var(--main-color-light-mode);
-    font-weight: 600;
-}
-
-.educacion-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-.educacion-container h2 {
-    font-size: 3em;
-    color: var(--accent-color-dark-mode);
-    padding-bottom: 5rem;
-}
-
-body.light .educacion-container h2 {
-    color: var(--accent-color-variable-light-mode);
-}
-
-.descripciones {
-    display: flex;
-    flex-direction: row;
-    gap: 10rem;
-    flex-wrap: wrap;
-}
-
-.edu-descrip {
-    display: flex;
-    flex-direction: column;
-}
-
-.edu-descrip h3 {
-    font-size: 2em;
-    color: var(--main-color-dark-mode);
-}
-
-body.light .edu-descrip h3 {
-    color: var(--second-color);
-}
-
-.edu-descrip p {
-    font-size: 1.5em;
-    color: var(--second-color);
-    width: 30rem;
-}
-
-/*Imagen educacion*/
-.container-imagen-educacion {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.imagen-educacion {
-    width: 100%;
-    height: 500px;
-    background-image: url('https://res.cloudinary.com/adrastea/image/upload/v1688666189/Fiber-plus/imagen-educacion_l4ifba.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    position: relative;
-}
-
-.imagen-educacion::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #234a42c7;
-    transition: 0.3s ease-in-out;
-}
-
-body.light .imagen-educacion::before {
-    background-color: #8bffe889;
-}
-
-.imagen-educacion h3 {
-    position: relative;
-    font-size: 3.5em;
-    width: 700px;
-    text-align: center;
-    color: var(--main-color-dark-mode);
-    margin: 0 auto;
-    z-index: 1;
-}
-
-.imagen-educacion .linea-blanca {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1.5px;
-    background-color: white;
-}
-
-.imagen-educacion .btn-planes {
-    z-index: 1;
-}
-
-/*seccion planes*/
-.planes-ed {
-    position: relative;
-    max-width: 150rem;
-    min-height: 100vh;
-    margin: 0 auto;
-}
-
-.planes-container {
-    padding-top: 2rem;
-}
-
-.circle-7 {
-    top: 25%;
-    left: -10%;
-    background-color: var(--accent-color-dark-mode);
-}
-
-body.light .circle-7 {
-    background-color: var(--accent-color-light-mode-variable);
-}
-
-.circle-8 {
-    top: 70%;
-    right: -10%;
-    background-color: var(--accent-color-dark-mode);
-}
-
-body.light .circle-8 {
-    background-color: var(--accent-color-light-mode-variable);
-}
-
-.planes-ed i {
-    font-size: 2em;
-}
-
-.planes-ed h3 {
-    font-size: 3.5em;
-    padding: 0 2rem;
-    color: var(--accent-color-dark-mode);
-}
-
-body.light .planes-ed h3 {
-    color: var(--accent-color-variable-light-mode);
-}
-
-.texto-modulo {
-    padding: 2rem 2rem 3rem 2rem;
-    padding-top: 2rem;
-    font-size: 1.5em;
-    color: var(--second-color);
-}
-
-.pdf {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.pdf p {
-    padding-left: 2rem;
-    font-size: 1.5rem;
-    color: var(--main-color-dark-mode);
-}
-
-body.light .pdf p {
-    color: var(--second-color);
-}
-
-/* PÁGINA FÚNEBRES --------------------------------------------------------------------  */
-/*seccion sepelio*/
-.sepelio {
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 5rem;
-    background-color: var(--background-color-variable);
-    transition: 0.3s ease-in-out;
-}
-
-body.light .sepelio {
-    background-color: var(--shadow-light-mode);
-}
-
-.descripcion-sepelio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem 1rem 0 1rem;
-}
-
-.items-servicios {
-    max-width: 90rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5rem;
-}
-
-.item-servicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-}
-
-.item-servicio h3 {
-    text-align: center;
-    font-size: 1.8em;
-    color: var(--main-color-dark-mode);
-    font-weight: 200;
-}
-
-body.light .item-servicio h3 {
-    color: var(--second-color);
-    font-weight: 600;
-}
-
-.item-servicio i {
-    font-size: 3em;
-    color: var(--main-color-dark-mode);
-}
-
-body.light .item-servicio i {
-    color: var(--background-color-variable);
-}
-
-.item-servicio p {
-    font-size: 1.5em;
-    color: var(--second-color);
-    text-align: center;
-}
-
-.reseva-turno-sepelio {
-    padding-top: 8rem;
-    width: 800px;
-    font-size: 1.5em;
-    color: var(--main-color-dark-mode);
-    font-weight: 600;
-}
-
-body.light .reseva-turno-sepelio {
-    color: var(--background-color-variable);
-}
-
-/*carrusel*/
-.carrusel {
-    width: 100%;
-    min-height: 100vh;
-}
-
-.container-carrusel {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.texto-carrusel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    z-index: 1;
-    color: var(--main-color-dark-mode);
-    text-align: center;
-}
-
-.texto-carrusel h3 {
-    font-size: 4em;
-    opacity: 0;
-    animation: fade-in 1s ease forwards;
-    animation-delay: 0.2s;
-}
-
-.texto-carrusel p {
-    font-size: 2em;
-    opacity: 0;
-    animation: fade-in 1s ease forwards;
-    animation-delay: 0.4s;
-}
-
-.splide img {
-    width: 100%;
-    height: 90rem;
-    object-fit: cover;
-}
-
-.splide__slide img {
-    filter: brightness(60%);
-}
-
-.my-slider-progress {
-    background: var(--second-color);
-}
-
-.my-slider-progress-bar {
-    background: var(--accent-color-dark-mode);
-    height: 3px;
-    transition: width 400ms ease;
-    width: 0;
-}
-
-.splide__arrow--next {
-    background-color: #ffffff29;
-    backdrop-filter: blur(1.5px);
-    font-size: 1.5rem;
-    border: none;
-}
-
-.splide__arrow--next svg {
-    fill: var(--main-color-dark-mode);
-}
-
-.splide__arrow--prev {
-    background-color: #ffffff3b;
-    backdrop-filter: blur(1.5px);
-    font-size: 1.5rem;
-    border: none;
-}
-
-.splide__arrow--prev svg {
-    fill: var(--main-color-dark-mode);
-}
-
-/* asesoria section*/
-.asesoria {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-}
-
-.circle-10 {
-    top: 50%;
-    left: -10%;
-    background-color: var(--accent-color-variable-dark-mode);
-}
-
-body.light .circle-10 {
-    background-color: var(--accent-color-light-mode-variable);
-}
-
-.circle-11 {
-    top: 70%;
-    right: -10%;
-    background-color: var(--accent-color-variable-dark-mode);
-}
-
-body.light .circle-11 {
-    background-color: var(--accent-color-light-mode-variable);
-}
-
-.imagen-asesoria {
-    width: 100%;
-    height: 400px;
-    background-image: url('https://res.cloudinary.com/adrastea/image/upload/v1688742727/Fiber-plus/apoyo_llr7ep.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: center;
-}
-
-.imagen-asesoria::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.596);
-    transition: 0.3s ease-in-out;
-}
-
-body.light .imagen-asesoria::before {
-    background-color: rgba(186, 186, 186, 0.596);
-}
-
-.imagen-asesoria h3 {
-    position: relative;
-    font-size: 3em;
-    width: 700px;
-    text-align: center;
-    color: var(--main-color-dark-mode);
-    margin: 0 auto;
-    z-index: 1;
-}
-
-.texto-asesoramiento {
-    font-size: 2em;
-    width: 700px;
-    text-align: center;
-    color: var(--second-color);
-}
-
-.asesoramiento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10rem;
-}
-
-.asesoramiento h2 {
-    font-size: 3em;
-    color: var(--accent-color-variable-dark-mode);
-    padding-bottom: 2rem;
-}
-
-body.light .asesoramiento h2 {
-    color: var(--accent-color-variable-light-mode)
-}
-
-.asesoramiento-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10rem 0 0;
-    gap: 10rem;
-}
-
-.ase-item h3 {
-    font-size: 1.8em;
-    color: var(--main-color-dark-mode);
-    font-weight: 600;
-    width: 300px;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
-body.light .ase-item h3 {
-    color: var(--second-color);
-}
-
-.ase-item p {
-    font-size: 1.5em;
-    color: var(--second-color);
-    width: 300px;
-    text-align: center;
-}
-
-/*Servicios sepelio*/
-.servicios-sepelio {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo-servicios-sepelio {
-    padding-top: 10rem;
-}
-
-.servicios-sepelio .titulo-servicios-sepelio {
-    font-size: 3em;
-    color: var(--accent-color-variable-dark-mode);
-}
-
-body.light .servicios-sepelio .titulo-servicios-sepelio {
-    color: var(--accent-color-variable-light-mode);
-}
-
-/* PÁGINA SERVICIOS BÁSICOS -------------------------------------------------------------------- */
-/*seccion planes*/
-.planes-servicios-basicos {
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.planes-container-servicios {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    align-items: center;
-}
-
-.planes-agua {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.titulo-agua {
-    font-size: 3em;
-    color: var(--main-color-dark-mode);
-    padding: 5rem 0 2rem 0;
-}
-
-body.light .titulo-agua {
-    color: var(--background-color-variable);
 }
 
 /* PÁGINA TELEVISIÓN -------------------------------------------------------------------- */
@@ -3629,8 +3032,6 @@ body.light .img-grillas {
         font-size: 3em;
     }
 
-    
-
     /* Programas */
     .container-programas {
         justify-content: center;
@@ -3692,34 +3093,6 @@ body.light .img-grillas {
 
     .copyright {
         font-size: 1.5em;
-    }
-
-    /* PÁGINA EDUCACION */
-    .circle-9 {
-        right: 8%;
-    }
-
-    .dialogo6 {
-        top: 60%;
-        right: 6%;
-    }
-
-    .dialogo7 {
-        top: 70%;
-        right: 13%;
-    }
-
-    /*Imagen educacion*/
-    .container-imagen-educacion {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .imagen-educacion {
-        width: 100%;
-        height: 300px;
     }
 }
 
@@ -3829,32 +3202,6 @@ body.light .img-grillas {
 
     .persona3-memorials p {
         font-size: 1.5em;
-    }
-
-    /*PAGINA EDUCACION*/
-    .descripciones {
-        gap: 5rem;
-    }
-
-    .circle-9 {
-        top: 70%;
-    }
-
-    .dialogo6 {
-        top: 80%;
-        right: 6%;
-    }
-
-    .dialogo7 {
-        top: 90%;
-        right: 13%;
-    }
-
-    /*PAGINA SERVICIOS FÚNEBRES*/
-    .asesoramiento-items {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
     }
 }
 
@@ -4090,58 +3437,6 @@ body.light .img-grillas {
         width: 50rem;
     }
 
-    /*PAGINA EDUCACION*/
-    .imagen-educacion h3 {
-        font-size: 3.5em;
-        width: 500px;
-    }
-
-    .educacion-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .educacion-container h2 {
-        width: 500px;
-        text-align: center;
-    }
-
-    .descripciones {
-        justify-content: center;
-    }
-
-    .circle-9 {
-        top: 90%;
-        right: 35%;
-    }
-
-    .dialogo6 {
-        top: 95%;
-        right: 25%;
-    }
-
-    .dialogo7 {
-        top: 105%;
-        right: 40%;
-    }
-
-    /*PAGINA SERVICIOS FUNEBRES*/
-    .reseva-turno-sepelio {
-        width: 500px;
-    }
-
-    .servicios-sepelio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 5rem;
-    }
-
-    .imagen-asesoria {
-        height: 300px;
-    }
-
     /*PAGINA TELEVISION*/
     .pop-up-image img {
         width: 95%;
@@ -4178,45 +3473,6 @@ body.light .img-grillas {
 
     .info-fundadores p {
         font-size: 1.2em;
-    }
-
-    /*PAGINA SERVICIOS FUNEBRES*/
-    .texto-asesoramiento {
-        font-size: 1.8em;
-        width: 350px;
-    }
-
-    .texto-carrusel h3 {
-        font-size: 3em;
-    }
-
-    .texto-carrusel p {
-        font-size: 1.8em;
-    }
-
-    .imagen-asesoria h3 {
-        width: 250px;
-        font-size: 2em;
-    }
-
-    .asesoramiento-items {
-        gap: 6rem;
-    }
-
-    .reseva-turno-sepelio {
-        width: 350px;
-    }
-
-    .item-servicio {
-        width: 250px;
-    }
-
-    .item-servicio h3 {
-        font-size: 1.8em;
-    }
-
-    .item-servicio p {
-        font-size: 1.5em;
     }
 }
 
@@ -4423,19 +3679,6 @@ body.light .img-grillas {
         padding-top: 6rem;
         padding-left: 10rem;
         font-size: 1.5em;
-    }
-
-    /*PÁGINA EDUCACION*/
-    .educacion {
-        padding-top: 10rem;
-    }
-
-    .dialogo6 {
-        top: 101%;
-    }
-
-    .dialogo7 {
-        top: 108%;
     }
 }
 
@@ -4818,32 +4061,6 @@ body.light .img-grillas {
     .bottom-card-planes ul {
         font-size: 1.5em;
         padding-bottom: 2rem;
-    }
-
-    /*PAGINA EDUCACION*/
-    .imagen-educacion h3 {
-        font-size: 3em;
-        width: 350px;
-    }
-
-    .educacion-container h2 {
-        width: 350px;
-        font-size: 3em;
-    }
-
-    .circle-9 {
-        right: 25%;
-    }
-
-    .titulo-planes h2 {
-        width: 350px;
-        text-align: center;
-    }
-
-    /*PAGINA SERVICIOS BASICOS*/
-    .titulo-agua {
-        font-size: 2.5em;
-        width: 250px;
     }
 
     /*PAGINA TELEVISION*/
@@ -5249,89 +4466,6 @@ body.light .img-grillas {
     .bottom-card-planes ul {
         font-size: 1.5em;
         padding-bottom: 2rem;
-    }
-
-    /*PAGINA EDUCACION*/
-    .titulo-planes h2 {
-        width: 250px;
-    }
-
-    .imagen-educacion h3 {
-        width: 250px;
-        font-size: 2.5em;
-    }
-
-    .educacion-container h2 {
-        width: 250px;
-        font-size: 2.5em;
-    }
-
-    .edu-descrip h3 {
-        font-size: 1.8em;
-    }
-
-    .edu-descrip p {
-        width: 250px;
-        font-size: 1.5em;
-    }
-
-    .dialogo6 {
-        right: 15%;
-    }
-
-    .dialogo7 {
-        right: 15%;
-    }
-
-    /*PAGINA SERVICIOS FUNEBRES*/
-    .texto-asesoramiento {
-        font-size: 1.2em;
-        width: 250px;
-    }
-
-    .texto-carrusel h3 {
-        font-size: 2em;
-    }
-
-    .texto-carrusel p {
-        font-size: 1.5em;
-    }
-
-    .imagen-asesoria h3 {
-        width: 250px;
-        font-size: 2em;
-    }
-
-    .reseva-turno-sepelio {
-        width: 250px;
-    }
-
-    .reseva-turno-sepelio {
-        font-size: 1.2em;
-    }
-
-    .item-servicio {
-        width: 250px;
-    }
-
-    .item-servicio h3 {
-        font-size: 1.8em;
-    }
-
-    .item-servicio p {
-        font-size: 1.5em;
-    }
-
-    .ase-item h3 {
-        width: 250px;
-    }
-
-    .ase-item p {
-        width: 250px;
-    }
-
-    .servicios-sepelio h2 {
-        text-align: center;
     }
 
     /*PAGINA TELEVISION*/
