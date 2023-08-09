@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra empresa</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../../index.js" defer></script>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="logotipo">
+            Empresa
+        </h2>
+        <div class="mode">
+            <div class="circle-mode"></div>
+            <div class="icons">
+                <i class="uil uil-moon"></i>
+                <i class="uil uil-sun"></i>
+            </div>
+        </div>
+    </header>
+    <!--end of header-->
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="links">
+            <a href="../../index.html" class="link">Inicio</a>
+            <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
+                onmouseleave="hideSubMenu1()">Nosotros</a>
+            <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
+                <a href="#valores">Valores</a>
+                <a href="#corporativa">Cooperativa</a>
+                <a href="#equipo">Equipo</a>
+            </div>
+            <a href="../../index.html#programas" class="link3">Programas</a>
+            <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
+                onmouseleave="hideSubMenu2()">Servicios</a>
+            <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
+                <a href="../../assets/pages/servicios-basicos.html">Servicios básicos</a>
+                <a href="../../assets/pages/television.html">Televisión</a>
+                <a href="../../assets/pages/servicios-funebres.html">Fúnebres</a>
+                <a href="../../assets/pages/educacion.html">Educación</a>
+                <a href="../../assets/pages/telefonia.html">Telefonía</a>
+                <a href="../../assets/pages/internet.html">Internet</a>
+            </div>
+            <a href="../../index.html#contacto" class="link4">Contacto</a>
+        </div>
+    </nav>
+    <div class="navbar-responsive">
+        <i class="uil uil-arrow-left arrow-in"></i>
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-estate list-icon"></i>
+                    <a href="../../index.html" class="nav-link">Inicio</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-users-alt list-icon"></i>
+                    <a href="../../index.html#nosotros" class="nav-link">Nosotros</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="#equipo" class="nav-link nav-link-inside">Equipo</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#corporativa"
+                            class="nav-link nav-link-inside">Cooperativa</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#memorials"
+                            class="nav-link nav-link-inside">Memorials</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#valores"
+                            class="nav-link nav-link-inside">Valores</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-tv-retro list-icon"></i>
+                    <a href="../../index.html#programas" class="nav-link">Programas</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-file-landscape list-icon"></i>
+                    <a href="../../index.html#servicios" class="nav-link">Servicios</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="../../assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/servicios-funebres.html" class="nav-link nav-link-inside">Fúnebres</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
+                            básicos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-message list-icon"></i>
+                    <a href="../../index.html#contacto" class="nav-link">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--end of navbar-->
+    <!--seccion empresa-->
+    <section class="empresa" id="corporativa">
+        <div class="circle circle-5"></div>
+        <div class="circle circle-6"></div>
+        <div class="container-empresa">
+            <div class="descripcion-equipo">
+                <h2 class="descripcion-equipo-h2">
+                    Quienes somos, nuestra historia y nuestros valores
+                </h2>
+                <h3 class="descripcion-equipo-h3">
+                    Conocé nuestra empresa
+                </h3>
+                <p class="p">
+                    Nuestra cooperativa empezó gracias al esfuerzo incansable de nuestros fundadores, que en el año 2000 decidieron esforzarse 
+                    para traerle al pueblo los servicios que tanto les faltaban. Entonces al fundar la cooperativa empezaron a darle los mejores
+                    servicios a todos los habitantes del pueblo creciendo enormemente en todos estos años. Dándoles trabajo a las personas del 
+                    pueblo. Y también dandoles todas esas cosas que faltaban en el pueblo, estableciendonos como un pilar de nuestra comunidad. 
+                </p>
+                <div class="timeline">
+                    <div class="linea-base"></div>
+                    <div class="ramificacion evento1" data-aos="fade-up" data-aos-delay="100">
+                        <div class="fecha">2000</div>
+                        <div class="descripcion-timeline">Inicios de la Cooperativa</div>
+                    </div>
+                    <div class="ramificacion evento2" data-aos="fade-up" data-aos-delay="200">
+                        <div class="fecha">2005</div>
+                        <div class="descripcion-timeline">Evento 2</div>
+                    </div>
+                    <div class="ramificacion evento3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="fecha">2010</div>
+                        <div class="descripcion-timeline">Evento 3</div>
+                    </div>
+                    <div class="ramificacion evento4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="fecha">2023</div>
+                        <div class="descripcion-timeline">Actualidad</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fotografia">
+                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572427/Fiber-plus/empresa_dwoeip.jpg"
+                    alt="Imagen de empresa todos juntos">
+                <div class="pop-up">
+                    <i class="uil uil-grin-tongue-wink"></i>
+                    <p>Una tarde de oficina con nosotros!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-equipo" id="equipo">
+            <div class="card-equipo">
+                <div class="img-equipo">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572428/Fiber-plus/Christian_i9mqr5.jpg"
+                        alt="fotografía del primer integrante">
+                </div>
+                <div class="content">
+                    <h3>Christian</h3>
+                    <p>
+                        ¡Hola, soy Christian Rodrídrez! soy el comunnity manager de la empresa. Me encanta
+                        trabajar en equipo y aportar estabilidad a la empresa. Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an
+                        unknow printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                </div>
+            </div>
+            <div class="card-equipo">
+                <div class="img-equipo">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572414/Fiber-plus/Sebastian_bxlwtr.jpg"
+                        alt="fotografía del segundo integrante">
+                </div>
+                <div class="content">
+                    <h3>Sebtastían</h3>
+                    <p>
+                        ¡Hola, soy Sebtastían Gutierrez! soy el comunnity manager de la empresa. Me encanta
+                        trabajar en equipo y aportar estabilidad a la empresa. Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an
+                        unknow printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                </div>
+            </div>
+            <div class="card-equipo">
+                <div class="img-equipo">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/Guillermo_ljrcsh.jpg"
+                        alt="Fotografía de la tercer integrante">
+                </div>
+                <div class="content">
+                    <h3>Guillermo</h3>
+                    <p>
+                        ¡Hola, soy Guillermo Gutierrez! soy el comunnity manager de la empresa. Me encanta
+                        trabajar en equipo y aportar estabilidad a la empresa. Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an
+                        unknow printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of seccion empresa-->
+    <!--seccion valores-->
+    <section class="valores" id="valores">
+        <div class="container-valores">
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up">
+                    <p>
+                        Servicio a nuestra comunidad. 
+                    </p>
+                </div>
+            </div>
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up" data-aos-delay="100">
+                    <p>
+                        Trabajo con consciencia. 
+                    </p>
+                </div>
+            </div>
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up" data-aos-delay="200">
+                    <p>
+                        Dar trabajo a las personas de la comunidad.
+                    </p>
+                </div>
+            </div>
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up" data-aos-delay="300">
+                    <p>
+                        Brindar productos confiables.
+                    </p>
+                </div>
+            </div>
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up" data-aos-delay="400">
+                    <p>
+                        Ofrecer servicios de buena calidad.
+                    </p>
+                </div>
+            </div>
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up" data-aos-delay="500">
+                    <p>
+                        Priorizamos nuestro buen trato con los clientes.
+                    </p>
+                </div>
+            </div>
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up" data-aos-delay="600">
+                    <p>
+                        Trabajo en equipo, ayuda mutua. 
+                    </p>
+                </div>
+            </div>
+            <div class="items-valores">
+                <div>
+                    <i class="uil uil-grin-tongue-wink"></i>
+                </div>
+                <div class="texto-valores" data-aos="fade-up" data-aos-delay="700">
+                    <p>
+                        Ofrecer la mejor educación. Educación de calidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of seccion valores-->
+    <!--seccion memorials-->
+    <section class="memorials" id="memorials">
+        <div class="container-memorials">
+            <div class="titulo-memorials">
+                <div class="encabezado1">
+                    <h2>
+                        Memorials
+                    </h2>
+                    <i class="uil uil-book-open"></i>
+                </div>
+                <div class="encabezado2">
+                    <h3>
+                        Recordamos con cariño <br> a nuestros integrantes
+                    </h3>
+                    <p>
+                        Este espacio está dedicado a las personas que con tanto esfuerzo pusieron esta cooperativa de pie.
+                        Y que por desgracia ya no están entre nosotros. En honor a todas las cosas que aportaron y que 
+                        son irremplazables, les damos un espacio para que los conozcas.
+                    </p>
+                </div>
+            </div>
+            <div class="imagenes-memorials">
+                <div class="persona1-memorials">
+                    <p> "Si caminas solo irás más rápido. Si caminas acompañado, llegarás más lejos." -Miguel
+                    </p>
+                </div>
+                <div class="persona2-memorials">
+                    <p> "Quien no ha caído nunca, no tiene una idea justa del esfuerzo que hay que hacer para mantenerse en pie." -Josefina
+                    </p>
+                </div>
+                <div class="persona3-memorials">
+                    <p> "La desconfianza en los propios valores, crea indefensión e independecia en los otros." -Antonio
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of memorials-->
+    <!--seccion footer-->
+    <section class="footer">
+        <div class="section-footer">
+            <div class="div1">
+                <div class="top-footer">
+                    <div>
+                        <h3>Cooperativa</h3>
+                    </div>
+                    <div>
+                        <p>
+                            Nuestra cooperativa está dedicada a ofrecer todos los servicios básicos a nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div>
+                        <h3>Fundadores</h3>
+                    </div>
+                    <div class="container-fundadores">
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/fundador_pcydtk.png"
+                                    alt="Imagen del fundador 1 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Christian Rodrídrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 1</p>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador2_idfla4.png"
+                                    alt="Imagen del fundador 2 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Sebtastían Gutierrez</strong></p>
+                                <div>
+                                    <p>Fundador número 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador3_biuc86.png"
+                                    alt="Imagen del fundador 3 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Guillermo Gutierrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                <div>
+                    <h3>Teléfonos útiles</h3>
+                </div>
+                <div class="tel cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+            </div>
+            <div class="div3">
+                <div>
+                    <h3>Nuestras redes</h3>
+                </div>
+                <div class="redes2">
+                    <a href="#" class="icon2 icon-ig2"><i class="uil uil-instagram"></i></a>
+                    <a href="#" class="icon2 icon-wsp2"><i class="uil uil-whatsapp"></i></a>
+                    <a href="#" class="icon2 icon-mail2"><i class="uil uil-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer-bottom">
+            <div class="designed">
+                <p class="designed-by">Sitio desarrollado por Liu</p>
+            </div>
+            <div class="container-copy">
+                <p class="copyright">
+                    © 2023 Cooperativa. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--end of seccion footer-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

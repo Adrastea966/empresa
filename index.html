@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="assets/js/index-functions.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+
+    <!--Seccion principal-->
+    <section class="principal">
+
+        <header class="header">
+            <h2 class="logotipo">
+                Empresa
+            </h2>
+            <div class="mode" id="mode">
+                <div class="circle-mode"></div>
+                <div class="icons">
+                    <i class="uil uil-moon"></i>
+                    <i class="uil uil-sun"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-principal">
+            <div class="paragraph">
+                <div class="descripcion1">
+                    <h1>Empresa</h1>
+                </div>
+                <br>
+                <div class="descripcion">Nuestra empresa está dedicada a las personas
+                </div>
+                <div class="descripcion">ofreciéndoles todos servicios que requieran</div>
+                <div class="scroll-down">
+                    <button class="btn-scroll">
+                        <a href="#nosotros">
+                            <i class="uil uil-angle-down"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="redes">
+            <a href="#" class="icon icon-ig"><i class="uil uil-instagram"></i></a>
+            <a href="#" class="icon icon-wsp"><i class="uil uil-whatsapp"></i></a>
+            <a href="#" class="icon icon-mail"><i class="uil uil-envelope"></i></a>
+        </div>
+
+        <video muted autoplay loop>
+            <source src="https://res.cloudinary.com/adrastea/video/upload/v1689032886/Fiber-plus/VideoFondo_gy3nbk.mp4"
+                type="video/mp4">
+        </video>
+        <div class="capa"></div>
+
+    </section>
+
+    <!--Navbar-->
+    <section>
+
+        <nav class="navbar">
+
+            <div class="links">
+                <a href="#" class="link">Inicio</a>
+                <a href="#nosotros" class="link1" onmouseenter="showSubMenu1()"
+                    onmouseleave="hideSubMenu1()">Nosotros</a>
+                <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
+                    <a href="assets/pages/sobre-la-empresa.html#valores">Valores</a>
+                    <a href="assets/pages/sobre-la-empresa.html#corporativa">Empresa</a>
+                    <a href="assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
+                </div>
+                <a href="#programas" class="link3">Programas</a>
+                <a href="#servicios" class="link2" onmouseenter="showSubMenu2()"
+                    onmouseleave="hideSubMenu2()">Servicios</a>
+                <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
+                    <a href="assets/pages/television.html">Televisión</a>
+                    <a href="assets/pages/internet.html">Internet</a>
+                </div>
+                <a href="#contacto" class="link4">Contacto</a>
+            </div>
+
+        </nav>
+
+        <div class="navbar-responsive">
+            <i class="uil uil-arrow-left arrow-in"></i>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="list-button">
+                        <i class="uil uil-estate list-icon"></i>
+                        <a href="#" class="nav-link">Inicio</a>
+                    </div>
+                </li>
+                <li class="list-item list-item-click">
+                    <div class="list-button list-button-click">
+                        <i class="uil uil-users-alt list-icon"></i>
+                        <a href="#nosotros" class="nav-link">Nosotros</a>
+                        <i class="uil uil-angle-right list-arrow"></i>
+                    </div>
+                    <ul class="list-show">
+                        <li class="list-inside">
+                            <a href="./assets/pages/sobre-la-empresa.html#equipo"
+                                class="nav-link nav-link-inside">Equipo</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="./assets/pages/sobre-la-empresa.html#corporativa"
+                                class="nav-link nav-link-inside">Empresa</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="./assets/pages/sobre-la-empresa.html#valores"
+                                class="nav-link nav-link-inside">Valores</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <div class="list-button">
+                        <i class="uil uil-tv-retro list-icon"></i>
+                        <a href="#programas" class="nav-link">Programas</a>
+                    </div>
+                </li>
+                <li class="list-item list-item-click">
+                    <div class="list-button list-button-click">
+                        <i class="uil uil-file-landscape list-icon"></i>
+                        <a href="#servicios" class="nav-link">Servicios</a>
+                        <i class="uil uil-angle-right list-arrow"></i>
+                    </div>
+                    <ul class="list-show">
+                        <li class="list-inside">
+                            <a href="./assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="./assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <div class="list-button">
+                        <i class="uil uil-message list-icon"></i>
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+   
+    <!--Seccion acerca de la empresa-->
+    <section class="nosotros" id="nosotros">
+
+        <div class="container-about">
+            <div class="texto-about">
+                <h2 data-aos="fade-down" data-aos-delay="100">Sobre nosotros</h2>
+                <p data-aos="fade-down" data-aos-delay="200">
+                    Nuestra Empresa está dedicada a ofrecer todos los servicios básicos a nuestros clientes,
+                    pero no solo eso, también ofrecemos servicios de internet, educación y sepelios, entre muchas
+                    otras cosas. Si queres conocerlas, clickea acá abajo.
+                </p>
+                <div class="info">
+                    <button class="btn-info"><a href="./assets/pages/sobre-la-empresa.html">Más info</a></button>
+                </div>
+            </div>
+            <div class="image-about">
+                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688665513/Fiber-plus/about_awvsne.jpg"
+                    alt="imagen que muestra a los integrantes de la empresa">
+                <div class="decoration">
+                    <svg>
+                        <circle class="circle-about" cx="60" cy="60" r="50" />
+                    </svg>
+                    <i class="uil uil-heart-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Fin de seccion acerca de-->
+
+    <!--Seccion por qué elegirnos-->
+    <section class="why" id="why">
+
+        <div class="container-why">
+
+            <div class="texto-why">
+                <h2>
+                    ¿Por qué elegirnos a nosotros?
+                </h2>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <i class="uil uil-heart-alt"></i>
+                    <p data-aos="fade-down" data-aos-delay="100">Contamos con muy buena atención al cliente</p>
+                </div>
+                <div class="item">
+                    <i class="uil uil-usd-circle"></i>
+                    <p data-aos="fade-down" data-aos-delay="200">Precios accesibles</p>
+                </div>
+                <div class="item">
+                    <i class="uil uil-award"></i>
+                    <p data-aos="fade-down" data-aos-delay="300">Productos de buena calidad</p>
+                </div>
+                <div class="item">
+                    <i class="uil uil-shield-check"></i>
+                    <p data-aos="fade-down" data-aos-delay="400">Nuestra empresa aporta confianza y seguridad</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Fin de seccion acerca de-->
+
+    <!--Seccion servicios-->
+    <section class="servicios" id="servicios">
+
+        <div class="container-cards">
+
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+
+            <div class="card">
+                <div class="cover-card">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/internet_pnxytf.jpg"
+                        alt="Imagen de una mujer viendo su computadora">
+                </div>
+                <h2>Internet</h2>
+                <p>Accesibles planes de internet que se van a ajustar a sus necesidades. Si querés conocer más, clikea
+                    acá abajo.</p>
+                <hr>
+                <div class="footer-card">
+                    <i class="uil uil-rss"></i>
+                    <div class="services">
+                        <button class="btn-servicio"><a href="./assets/pages/internet.html">Ver servicio</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover-card">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572424/Fiber-plus/television_apryvt.jpg"
+                        alt="Imagen de un niño sosteniendo un control remoto">
+                </div>
+                <h2>Televisión</h2>
+                <p>Tenemos la grilla más amplia de la zona, con los canales más populares y esos canales especiales que
+                    no encontrarás en otro lugar. Para más información, clickea acá abajo.</p>
+                <hr>
+                <div class="footer-card">
+                    <i class="uil uil-tv-retro"></i>
+                    <div class="services">
+                        <button class="btn-servicio"><a href="./assets/pages/television.html">Ver servicio</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Fin de seccion servicios-->
+
+    <!--Seccion programas-->
+    <section class="programas" id="programas">
+
+        <div class="container-programas">
+
+            <div class="texto-programas">
+                <h2 data-aos="fade-down" data-aos-delay="100">Programas</h2>
+                <p data-aos="fade-down" data-aos-delay="200">
+                    Contamos con la grilla más amplia de la zona, con los canales más populares y esos canales
+                    especiales que
+                    no encontrarás en otro lugar. Podrás ver todos nuestros planes de programación y elegir el que más
+                    te guste.
+                    Para más información, clickea acá abajo.
+                </p>
+                <div class="buttons">
+                    <div class="info2">
+                        <button class="btn-info"><a href="./assets/pages/television.html">Más info</a></button>
+                    </div>
+                    <div class="info2">
+                        <button class="btn-info2"><a href="./assets/pages/television.html">Ver planes</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-about">
+                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572430/Fiber-plus/programas_jyhoz2.png"
+                    alt="imagen que muestra una televisión y un control remoto">
+                <div class="decoration2">
+                    <svg>
+                        <circle class="circle-about" cx="60" cy="60" r="50" />
+                    </svg>
+                    <i class="uil uil-tv-retro"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Fin de seccion programas-->
+
+    <!--Seccion testimonios-->
+
+    <section class="testimonios" id="testimonios">
+
+        <div class="circlee circle-3"></div>
+        <div class="circlee circle-4"></div>
+
+        <div class="container-testimonios">
+
+            <div class="titulo-testimonio">
+                <h2>Testimonios de nuestros clientes</h2>
+            </div>
+
+            <div class="cards-testimonios">
+                <div class="test" data-aos="fade-left">
+                    <div class="foto">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572415/Fiber-plus/foto1_agctw9.png"
+                            alt="fotografía del hombre del testimonio">
+                    </div>
+                    <div class="reseña">
+                        <p>
+                            "Increible! son la única cooperativa que brinda un internet estable"
+                        </p>
+                    </div>
+                </div>
+                <div class="test" data-aos="fade-left">
+                    <div class="foto">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572414/Fiber-plus/foto2_izrp0q.png"
+                            alt="fotografía de la mujer del testimonio">
+                    </div>
+                    <div class="reseña">
+                        <p>
+                            "Antes de que estuvieran ellos no llegaba el agua. Y ahora gracias a la cooperativa mi
+                            familia tiene agua corriente"
+                        </p>
+                    </div>
+                </div>
+                <div class="test" data-aos="fade-left">
+                    <div class="foto">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572420/Fiber-plus/foto3_naazml.png"
+                            alt="fotografía del hombre del testimonio">
+                    </div>
+                    <div class="reseña">
+                        <p>
+                            "Gracias a la cooperativa pude estudiar lo que me gusta y encima a un buen precio."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Fin de seccion testimonios-->
+
+    <!--Seccion contacto-->
+
+    <section class="contacto" id="contacto">
+
+        <div class="container-general">
+
+            <div class="contacto-container">
+
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.8010206993063!2d-58.382409683430254!3d-34.60371785860061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1687812180939!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="direccion">
+                    <div class="datos-ubicacion">
+                        <div class="icono-ubication">
+                            <i class="uil uil-map-marker"></i>
+                        </div>
+                        <div class="ubication2">
+                            <h3 id="typed-text">¡Estamos aquí!.<span>&#160;</span></h3>
+                        </div>
+                    </div>
+                    <div class="direccion-texto">
+                        <p>Obelisco, Avenida 9 de Julio, Buenos Aires</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contacto-formulario">
+
+                <form id="form" action="" class="form">
+                    <h3>Contactanos</h3>
+                    <label for="name">Nombre Completo <span>*</span></label>
+                    <input name="name" required type="text" id="name" placeholder="Tu nombre">
+                    <label for="email">Correo electrónico <span>*</span></label>
+                    <input name="email" type="text" id="email" class="input" required placeholder="tuemail@gmail.com">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                    <div class="btn-submit">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+                <a href="mailto:ballian.eliana@gmail.com" id="mail-to">mail</a>
+
+            </div>
+    </section>
+    <!-- Fin de seccion contacto-->
+
+    <!--Seccion footer-->
+    <section class="footer">
+
+        <div class="section-footer">
+
+            <div class="div1">
+
+                <div class="top-footer">
+                    <div>
+                        <h3>Empresa</h3>
+                    </div>
+                    <div>
+                        <p>
+                            Nuestra Empresa está dedicada a ofrecer todos los servicios básicos a nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bottom-footer">
+                    <div>
+                        <h3>Fundadores</h3>
+                    </div>
+                    <div class="container-fundadores">
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/fundador_pcydtk.png"
+                                    alt="Imagen del fundador 1 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Christian Rodrídrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 1</p>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador2_idfla4.png"
+                                    alt="Imagen del fundador 2 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Sebastían Gutierrez</strong></p>
+                                <div>
+                                    <p>Fundador número 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador3_biuc86.png"
+                                    alt="Imagen del fundador 3 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Guillermo Gutierrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="div2">
+                <div>
+                    <h3>Teléfonos útiles</h3>
+                </div>
+                <div class="tel cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+            </div>
+
+            <div class="div3">
+                <div>
+                    <h3>Nuestras redes</h3>
+                </div>
+                <div class="redes2">
+                    <a href="#" class="icon2 icon-ig2"><i class="uil uil-instagram"></i></a>
+                    <a href="#" class="icon2 icon-wsp2"><i class="uil uil-whatsapp"></i></a>
+                    <a href="#" class="icon2 icon-mail2"><i class="uil uil-envelope"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-footer-bottom">
+            <div class="designed">
+                <p class="designed-by">Sitio desarrollado por Liu</p>
+            </div>
+            <div class="container-copy">
+                <p class="copyright">
+                    © 2023 Empresa. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <button class="scroll-top-button" onclick="scrollToTop()"><i class="uil uil-angle-up"></i></button>
+    <!--Fin de seccion footer-->
+
+    <!--libreria AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

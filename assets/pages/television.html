@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisión| planes</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../../acess.js" defer></script>
+    <script src="../../index.js" defer></script>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="logotipo">
+            Cooperativa
+        </h2>
+        <div class="mode">
+            <div class="circle-mode"></div>
+            <div class="icons">
+                <i class="uil uil-moon"></i>
+                <i class="uil uil-sun"></i>
+            </div>
+        </div>
+    </header>
+    <!--end of header-->
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="links">
+            <a href="../../index.html" class="link">Inicio</a>
+            <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
+                onmouseleave="hideSubMenu1()">Nosotros</a>
+            <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
+                <a href="../../assets/pages/sobre-la-empresa.html#valores">Valores</a>
+                <a href="../../assets/pages/sobre-la-empresa.html#memorials">Memorials</a>
+                <a href="../../assets/pages/sobre-la-empresa.html#corporativa">Cooperativa</a>
+                <a href="../../assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
+            </div>
+            <a href="../../index.html#programas" class="link3">Programas</a>
+            <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
+                onmouseleave="hideSubMenu2()">Servicios</a>
+            <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
+                <a href="../../assets/pages/servicios-basicos.html">Servicios básicos</a>
+                <a href="#">Televisión</a>
+                <a href="../../assets/pages/servicios-funebres.html">Fúnebres</a>
+                <a href="../../assets/pages/educacion.html">Educación</a>
+                <a href="../../assets/pages/telefonia.html">Telefonía</a>
+                <a href="../../assets/pages/internet.html">Internet</a>
+            </div>
+            <a href="../../index.html#contacto" class="link4">Contacto</a>
+        </div>
+    </nav>
+    <div class="navbar-responsive">
+        <i class="uil uil-arrow-left arrow-in"></i>
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-estate list-icon"></i>
+                    <a href="../../index.html" class="nav-link">Inicio</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-users-alt list-icon"></i>
+                    <a href="../../index.html#nosotros" class="nav-link">Nosotros</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="../../assets/pages/sobre-la-empresa.html#equipo"
+                            class="nav-link nav-link-inside">Equipo</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/sobre-la-empresa.html#corporativa"
+                            class="nav-link nav-link-inside">Cooperativa</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/sobre-la-empresa.html#memorials"
+                            class="nav-link nav-link-inside">Memorials</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/sobre-la-empresa.html#valores"
+                            class="nav-link nav-link-inside">Valores</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-tv-retro list-icon"></i>
+                    <a href="../../index.html#programas" class="nav-link">Programas</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-file-landscape list-icon"></i>
+                    <a href="../../index.html#servicios" class="nav-link">Servicios</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="../../assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/servicios-funebres.html"
+                            class="nav-link nav-link-inside">Fúnebres</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#" class="nav-link nav-link-inside">Televisión</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="../../assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
+                            básicos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-message list-icon"></i>
+                    <a href="../../index.html#contacto" class="nav-link">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--end of navbar-->
+    <section class="television">
+        <!--seccion que se ve inicialmente-->
+        <div class="seccion-sin-codigo">
+            <div class="circle circle-tel-vis"></div>
+            <h2 class="texto-sin-codigo">Ingresá con tu código de membresía para <br> ver nuestra grilla de programación
+            </h2>
+            <div class="container-btn">
+                <div class="btn-ingresar">
+                    <button class="btn-servicio" id="btn">Ingresar</button>
+                </div>
+                <div class="info2">
+                    <button class="btn-info2">Pedí tu código</button>
+                </div>
+            </div>
+            <div class="modal">
+                <i class="uil uil-times-circle close"></i>
+                <div class="container-modal">
+                    <label for="access-code">Ingresa el código de acceso:</label>
+                    <input type="text" id="access-code">
+                    <button id="access-button">Acceder</button>
+                    <div class="mensaje-error" style="display:none;">
+                        <p id="error-message"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--seccion que se ve solo con código de ingreso-->
+        <div class="seccion-con-codigo" style="display: none;">
+            <section class="planes-tv">
+                <div class="circle circle-7"></div>
+                <div class="circle circle-8"></div>
+                <div class="planes-container">
+                    <div class="titulo-planes">
+                        <h2>Nuestros planes</h2>
+                    </div>
+                    <div class="cards-planes">
+                        <div class="card-planes">
+                            <div class="top-card-planes">
+                                <div class="textos">
+                                    <p>Básico</p>
+                                    <p class="megas">50 canales</p>
+                                </div>
+                                <h2>$600.64/mes</h2>
+                            </div>
+                            <div class="bottom-card-planes">
+                                <h3>¿Qué ofrece este plan?</h3>
+                                <ul>
+                                    <li><i class="uil uil-check"></i>Programación sin cortes.</li>
+                                    <li><i class="uil uil-check"></i>Programas en vivo.</li>
+                                    <li><i class="uil uil-check"></i>Sin cortes por lluvias.</li>
+                                    <li><i class="uil uil-check"></i>Todos los canales deportivos.</li>
+                                </ul>
+                                <div class="btn-planes">
+                                    <button class="btn-servicio">Contratar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-planes">
+                            <div class="top-card-planes">
+                                <div class="textos">
+                                    <p>Estándar</p>
+                                    <p class="megas">75 canales</p>
+                                </div>
+                                <h2>$750/mes</h2>
+                            </div>
+                            <div class="bottom-card-planes">
+                                <h3>¿Qué ofrece este plan?</h3>
+                                <ul>
+                                    <li><i class="uil uil-check"></i>Programación sin cortes.</li>
+                                    <li><i class="uil uil-check"></i>Programas en vivo.</li>
+                                    <li><i class="uil uil-check"></i>Sin cortes por lluvias.</li>
+                                    <li><i class="uil uil-check"></i>Todos los canales deportivos.</li>
+                                </ul>
+                                <div class="btn-planes">
+                                    <button class="btn-servicio">Contratar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-planes">
+                            <div class="top-card-planes">
+                                <div class="textos">
+                                    <p>Premium</p>
+                                    <p class="megas">100 canales</p>
+                                </div>
+                                <h2>$1000/mes</h2>
+                            </div>
+                            <div class="bottom-card-planes">
+                                <h3>¿Qué ofrece este plan?</h3>
+                                <ul>
+                                    <li><i class="uil uil-check"></i>Programación sin cortes.</li>
+                                    <li><i class="uil uil-check"></i>Programas en vivo.</li>
+                                    <li><i class="uil uil-check"></i>Sin cortes por lluvias.</li>
+                                    <li><i class="uil uil-check"></i>Todos los canales deportivos.</li>
+                                </ul>
+                                <div class="btn-planes">
+                                    <button class="btn-servicio">Contratar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slider-marcas">
+                <div class="slider-track">
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/direct_bhequk.svg"
+                            alt="Logo de DirectTv">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572416/Fiber-plus/espn_eok1yx.svg"
+                            alt="Logo de ESPN">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/fox_by6mav.svg"
+                            alt="Logo de FOX">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/hbo_kjcdxx.svg"
+                            alt="Logo de HBO">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/tyc_ggbm3t.svg"
+                            alt="Logo de TyC sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/tnt_rdjvbc.svg"
+                            alt="Logo de TNT sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572418/Fiber-plus/universal_p4dpqz.svg"
+                            alt="Logo de universal">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/direct_bhequk.svg"
+                            alt="Logo de DirectTv">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572416/Fiber-plus/espn_eok1yx.svg"
+                            alt="Logo de ESPN">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/fox_by6mav.svg"
+                            alt="Logo de FOX">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/hbo_kjcdxx.svg"
+                            alt="Logo de HBO">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/tyc_ggbm3t.svg"
+                            alt="Logo de TyC sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/tnt_rdjvbc.svg"
+                            alt="Logo de TNT sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572418/Fiber-plus/universal_p4dpqz.svg"
+                            alt="Logo de universal">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/direct_bhequk.svg"
+                            alt="Logo de DirectTv">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572416/Fiber-plus/espn_eok1yx.svg"
+                            alt="Logo de ESPN">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/fox_by6mav.svg"
+                            alt="Logo de FOX">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/hbo_kjcdxx.svg"
+                            alt="Logo de HBO">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/tyc_ggbm3t.svg"
+                            alt="Logo de TyC sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/tnt_rdjvbc.svg"
+                            alt="Logo de TNT sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572418/Fiber-plus/universal_p4dpqz.svg"
+                            alt="Logo de universal">
+                    </div>
+                </div>
+            </div>
+            <div class="grillas">
+                <div class="container-grillas">
+                    <div class="bottom-grillas">
+                        <img class="img-grillas"
+                            src="https://res.cloudinary.com/adrastea/image/upload/v1688767519/Fiber-plus/8169814_yqhtzc.jpg"
+                            alt="Grilla digital">
+                        <div class="bottom-grillas-texto">
+                            <h3>Grilla digital</h3>
+                            <p>descargá nuestra grilla para estar al día!</p>
+                        </div>
+                        <div class="top-grillas-texto">
+                            <div class="ver-grilla">
+                                <button class="btn-ver" onclick="showPopUp()"><i class="uil uil-eye"></i>Ver
+                                    grilla</button>
+                            </div>
+                            <div class="descargar-grilla">
+                                <button class="btn-descargar"
+                                    onclick="downloadFile('https://res.cloudinary.com/adrastea/image/upload/v1688572424/Fiber-plus/grilla-digital_ffxruu.jpg', 'grilla-digital.jpg')">
+                                    <i class="uil uil-download-alt"></i> Descargar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-grillas">
+                    <div class="bottom-grillas">
+                        <img class="img-grillas"
+                            src="https://res.cloudinary.com/adrastea/image/upload/v1688767519/Fiber-plus/8169814_yqhtzc.jpg"
+                            alt="Grilla análoga">
+                        <div class="bottom-grillas-texto">
+                            <h3>Grilla análoga</h3>
+                            <p>descargá nuestra grilla para estar al día!</p>
+                        </div>
+                        <div class="top-grillas-texto">
+                            <div class="ver-grilla">
+                                <button class="btn-ver" onclick="showPopUp()"><i class="uil uil-eye"></i>Ver
+                                    grilla</button>
+                            </div>
+                            <div class="descargar-grilla">
+                                <button class="btn-descargar"
+                                    onclick="downloadFile('https://res.cloudinary.com/adrastea/image/upload/v1688572424/Fiber-plus/grilla-digital_ffxruu.jpg', 'grilla-digital.jpg')">
+                                    <i class="uil uil-download-alt"></i> Descargar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pop-up-image" id="pop-up-image">
+                    <span onclick="hidePopUp()">&times;</span>
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572426/Fiber-plus/grilla-analogica_i3o3bv.jpg"
+                        alt="Grilla análoga">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <div class="section-footer">
+            <div class="div1">
+                <div class="top-footer">
+                    <div>
+                        <h3>Cooperativa</h3>
+                    </div>
+                    <div>
+                        <p>
+                            Nuestra cooperativa está dedicada a ofrecer todos los servicios básicos a nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div>
+                        <h3>Fundadores</h3>
+                    </div>
+                    <div class="container-fundadores">
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/fundador_pcydtk.png"
+                                    alt="Imagen del fundador 1 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Christian Rodrídrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 1</p>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador2_idfla4.png"
+                                    alt="Imagen del fundador 2 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Sebtastían Gutierrez</strong></p>
+                                <div>
+                                    <p>Fundador número 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador3_biuc86.png"
+                                    alt="Imagen del fundador 3 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Guillermo Gutierrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                <div>
+                    <h3>Teléfonos útiles</h3>
+                </div>
+                <div class="tel cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+            </div>
+            <div class="div3">
+                <div>
+                    <h3>Nuestras redes</h3>
+                </div>
+                <div class="redes2">
+                    <a href="#" class="icon2 icon-ig2"><i class="uil uil-instagram"></i></a>
+                    <a href="#" class="icon2 icon-wsp2"><i class="uil uil-whatsapp"></i></a>
+                    <a href="#" class="icon2 icon-mail2"><i class="uil uil-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer-bottom">
+            <div class="designed">
+                <p class="designed-by">Sitio desarrollado por Liu</p>
+            </div>
+            <div class="container-copy">
+                <p class="copyright">
+                    © 2023 Cooperativa. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--end of footer-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
