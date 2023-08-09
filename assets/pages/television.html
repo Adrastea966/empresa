@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,16 +7,17 @@
     <title>Televisión| planes</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="../../acess.js" defer></script>
-    <script src="../../index.js" defer></script>
+    <script src="../js/acess.js" defer></script>
+    <script src="../js/index.js" defer></script>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
-    <!--header-->
+
+    <!--Header-->
     <header class="header">
         <h2 class="logotipo">
-            Cooperativa
+            Empresa
         </h2>
         <div class="mode">
             <div class="circle-mode"></div>
@@ -26,34 +27,35 @@
             </div>
         </div>
     </header>
-    <!--end of header-->
-    <!--navbar-->
+    <!--Fin del header-->
+
+    <!--Navbar-->
     <nav class="navbar">
+
         <div class="links">
             <a href="../../index.html" class="link">Inicio</a>
             <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
                 onmouseleave="hideSubMenu1()">Nosotros</a>
             <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
-                <a href="../../assets/pages/sobre-la-empresa.html#valores">Valores</a>
-                <a href="../../assets/pages/sobre-la-empresa.html#memorials">Memorials</a>
-                <a href="../../assets/pages/sobre-la-empresa.html#corporativa">Cooperativa</a>
-                <a href="../../assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
+                <a href="sobre-la-empresa.html#valores">Valores</a>
+                <a href="sobre-la-empresa.html#memorials">Memorials</a>
+                <a href="sobre-la-empresa.html#corporativa">Empresa</a>
+                <a href="sobre-la-empresa.html#equipo">Equipo</a>
             </div>
             <a href="../../index.html#programas" class="link3">Programas</a>
             <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
                 onmouseleave="hideSubMenu2()">Servicios</a>
             <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
-                <a href="../../assets/pages/servicios-basicos.html">Servicios básicos</a>
-                <a href="#">Televisión</a>
-                <a href="../../assets/pages/servicios-funebres.html">Fúnebres</a>
-                <a href="../../assets/pages/educacion.html">Educación</a>
-                <a href="../../assets/pages/telefonia.html">Telefonía</a>
-                <a href="../../assets/pages/internet.html">Internet</a>
+                <a href="television.html">Televisión</a>
+                <a href="internet.html">Internet</a>
             </div>
             <a href="../../index.html#contacto" class="link4">Contacto</a>
         </div>
+
     </nav>
+
     <div class="navbar-responsive">
+
         <i class="uil uil-arrow-left arrow-in"></i>
         <ul class="list">
             <li class="list-item">
@@ -70,20 +72,16 @@
                 </div>
                 <ul class="list-show">
                     <li class="list-inside">
-                        <a href="../../assets/pages/sobre-la-empresa.html#equipo"
-                            class="nav-link nav-link-inside">Equipo</a>
+                        <a href="#equipo" class="nav-link nav-link-inside">Equipo</a>
                     </li>
                     <li class="list-inside">
-                        <a href="../../assets/pages/sobre-la-empresa.html#corporativa"
-                            class="nav-link nav-link-inside">Cooperativa</a>
+                        <a href="#corporativa" class="nav-link nav-link-inside">Empresa</a>
                     </li>
                     <li class="list-inside">
-                        <a href="../../assets/pages/sobre-la-empresa.html#memorials"
-                            class="nav-link nav-link-inside">Memorials</a>
+                        <a href="#memorials" class="nav-link nav-link-inside">Memorials</a>
                     </li>
                     <li class="list-inside">
-                        <a href="../../assets/pages/sobre-la-empresa.html#valores"
-                            class="nav-link nav-link-inside">Valores</a>
+                        <a href="#valores" class="nav-link nav-link-inside">Valores</a>
                     </li>
                 </ul>
             </li>
@@ -101,24 +99,10 @@
                 </div>
                 <ul class="list-show">
                     <li class="list-inside">
-                        <a href="../../assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
-                    </li>
-                    <li class="list-inside">
-                        <a href="../../assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
-                    </li>
-                    <li class="list-inside">
-                        <a href="../../assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
-                    </li>
-                    <li class="list-inside">
-                        <a href="../../assets/pages/servicios-funebres.html"
-                            class="nav-link nav-link-inside">Fúnebres</a>
+                        <a href="internet.html" class="nav-link nav-link-inside">Internet</a>
                     </li>
                     <li class="list-inside">
                         <a href="#" class="nav-link nav-link-inside">Televisión</a>
-                    </li>
-                    <li class="list-inside">
-                        <a href="../../assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
-                            básicos</a>
                     </li>
                 </ul>
             </li>
@@ -129,9 +113,12 @@
                 </div>
             </li>
         </ul>
+
     </div>
-    <!--end of navbar-->
+
+    <!--Seccion television-->
     <section class="television">
+
         <!--seccion que se ve inicialmente-->
         <div class="seccion-sin-codigo">
             <div class="circle circle-tel-vis"></div>
@@ -157,6 +144,7 @@
                 </div>
             </div>
         </div>
+
         <!--seccion que se ve solo con código de ingreso-->
         <div class="seccion-con-codigo" style="display: none;">
             <section class="planes-tv">
@@ -233,6 +221,7 @@
                     </div>
                 </div>
             </section>
+
             <div class="slider-marcas">
                 <div class="slider-track">
                     <div class="slide-img">
@@ -321,6 +310,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="grillas">
                 <div class="container-grillas">
                     <div class="bottom-grillas">
@@ -376,19 +366,23 @@
                         alt="Grilla análoga">
                 </div>
             </div>
+
         </div>
+
     </section>
-    <!--footer-->
+    <!--Fin de seccion television-->
+
+    <!--Footer-->
     <section class="footer">
         <div class="section-footer">
             <div class="div1">
                 <div class="top-footer">
                     <div>
-                        <h3>Cooperativa</h3>
+                        <h3>Empresa</h3>
                     </div>
                     <div>
                         <p>
-                            Nuestra cooperativa está dedicada a ofrecer todos los servicios básicos a nuestros clientes.
+                            Nuestra empresa está dedicada a ofrecer todos los servicios básicos a nuestros clientes.
                         </p>
                     </div>
                 </div>
@@ -470,16 +464,18 @@
             </div>
             <div class="container-copy">
                 <p class="copyright">
-                    © 2023 Cooperativa. Todos los derechos reservados.
+                    © 2023 Empresa. Todos los derechos reservados.
                 </p>
             </div>
         </div>
     </section>
-    <!--end of footer-->
+    <!--Fin del footer-->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>

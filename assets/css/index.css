@@ -1,7 +1,7 @@
-/* Imports */
+/*Importes*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-/* Normalize */
+/*Normalizar*/
 *,
 *::after,
 *::before {
@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-/*variables*/
+/*Variables*/
 :root {
     /*dark mode*/
     --main-color-dark-mode: #fff;
@@ -29,7 +29,7 @@
     --second-color: #878787;
 }
 
-/* Globals */
+/*Globales*/
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
@@ -57,7 +57,7 @@ ul {
     padding-left: 0;
 }
 
-/* Principal */
+/*Principal*/
 .principal {
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ video {
     mix-blend-mode: overlay;
 }
 
-body.light .capa{
+body.light .capa {
     background: #e5e5e5;
 }
 
@@ -157,7 +157,7 @@ body.light .logotipo {
     animation-delay: 0.7s;
 }
 
-/* boton scroll abajo */
+/*boton scroll abajo*/
 .scroll-down {
     position: absolute;
     text-align: center;
@@ -230,12 +230,12 @@ body.light .navbar {
     right: 0;
     z-index: 5;
     visibility: hidden;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 .navbar-responsive.active {
     width: 300px;
-    pointer-events: auto; 
+    pointer-events: auto;
 }
 
 .nav-link {
@@ -310,7 +310,7 @@ body.light .list-icon {
 }
 
 .arrow-in {
-    pointer-events: auto; 
+    pointer-events: auto;
 }
 
 body.light .arrow-in {
@@ -366,7 +366,7 @@ body.light .list-show {
     transform: rotate(180deg);
 }
 
-/*fin navbar-responsive*/
+/*fin navbar responsive*/
 
 #menu-toggle {
     display: none;
@@ -425,7 +425,7 @@ body.light .submenu2 {
 }
 
 .submenu2.show2 {
-    height: 340px;
+    height: 110px;
 }
 
 .link,
@@ -478,7 +478,7 @@ body.light .submenu2 a:hover {
     }
 
     100% {
-        height: 200px;
+        height: 0px;
     }
 }
 
@@ -532,7 +532,7 @@ body.light .submenu2 a:hover {
     outline-color: #ffffff;
 }
 
-/* Dark-light button */
+/*Boton modo claro-oscuro*/
 .mode {
     cursor: pointer;
     position: absolute;
@@ -571,7 +571,7 @@ body.light .icons {
     display: none;
 }
 
-/* botón scroll arriba */
+/*Boton scroll arriba*/
 .scroll-top-button {
     position: fixed;
     bottom: 3rem;
@@ -616,8 +616,8 @@ body.light .scroll-top-button {
     }
 }
 
-/* PÁGINA HOME -------------------------------------------------------------------- */
-/* Section about */
+/*PÁGINA HOME -------------------------------------------------------------------- */
+/*Seccion acerca de*/
 .container-about {
     align-items: center;
     display: flex;
@@ -738,7 +738,7 @@ body.light .decoration i {
     }
 }
 
-/* Section why us */
+/*Seccion por qué elegirnos*/
 .why {
     width: 100%;
     min-height: 100vh;
@@ -807,42 +807,25 @@ body.light .item p {
     color: var(--background-color-variable);
 }
 
-/* Section services */
+/*Seccion servicios*/
 .servicios {
     min-height: 100vh;
     margin: 0 auto;
     max-width: 150rem;
-    padding-bottom: 20rem;
+    margin-bottom: 10rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.circle {
+.container-servicios {
     position: absolute;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    filter: blur(100px);
-    -webkit-filter: blur(100px);
-    z-index: -1;
-}
-
-.circle-1 {
-    top: 0;
-    left: -2%;
-    background-color: var(--accent-color-variable-dark-mode);
-}
-
-body.light .circle-1 {
-    background-color: var(--accent-color-light-mode-variable);
-}
-
-.circle-2 {
-    top: 70%;
-    right: 5%;
-    background-color: var(--accent-color-variable-dark-mode);
-}
-
-body.light .circle-2 {
-    background-color: var(--accent-color-light-mode-variable);
+    height: 100%;
+    width: 70%;
+    background-color: var(--background-color-variable);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-cards {
@@ -852,8 +835,29 @@ body.light .circle-2 {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    flex-direction: row;
+    align-items: center;
     z-index: 2;
-    gap: 4rem;
+    gap: 5rem;
+}
+
+.servicios-ofrecemos{
+    width: 30%;
+}
+
+.container-solo-cards{
+    display:flex;
+    flex-direction: row;
+}
+
+.servicios-ofrecemos h2 {
+    font-size: 5em;
+    color: var(--accent-color-variable-dark-mode);
+}
+
+.servicios-ofrecemos span {
+    font-size: 1.8em;
+    color: var(--main-color-dark-mode);
 }
 
 .card {
@@ -2024,7 +2028,7 @@ body.light .content h3 {
     color: var(--accent-color-variable-dark-mode);
 }
 
-body.light .items-valores i{
+body.light .items-valores i {
     color: var(--accent-color-variable-light-mode);
 }
 
@@ -2662,7 +2666,7 @@ body.light .medidor {
     background-color: var(--accent-color-dark-mode);
 }
 
-body.light .circle-9{
+body.light .circle-9 {
     background-color: var(--accent-color-light-mode-variable);
 }
 
@@ -2680,7 +2684,7 @@ body.light .circle-9{
     animation: dropInWsp 1s ease-in-out 1s forwards;
 }
 
-body.light .dialogo6{
+body.light .dialogo6 {
     background-color: var(--accent-color-variable-light-mode);
     box-shadow: 0 8px 32px 0 rgba(213, 213, 213, 0.825);
 }
@@ -2705,7 +2709,7 @@ body.light .dialogo6{
     animation: dropInWsp 1s ease-in-out 2s forwards;
 }
 
-body.light .dialogo7{
+body.light .dialogo7 {
     box-shadow: 0 8px 32px 0 rgba(213, 213, 213, 0.825);
 }
 
@@ -2729,7 +2733,7 @@ body.light .dialogo7{
     padding-bottom: 5rem;
 }
 
-body.light .educacion-container h2{
+body.light .educacion-container h2 {
     color: var(--accent-color-variable-light-mode);
 }
 
@@ -2750,7 +2754,7 @@ body.light .educacion-container h2{
     color: var(--main-color-dark-mode);
 }
 
-body.light .edu-descrip h3{
+body.light .edu-descrip h3 {
     color: var(--second-color);
 }
 
@@ -2796,7 +2800,7 @@ body.light .edu-descrip h3{
     transition: 0.3s ease-in-out;
 }
 
-body.light .imagen-educacion::before{
+body.light .imagen-educacion::before {
     background-color: #8bffe889;
 }
 
@@ -2841,7 +2845,7 @@ body.light .imagen-educacion::before{
     background-color: var(--accent-color-dark-mode);
 }
 
-body.light .circle-7{
+body.light .circle-7 {
     background-color: var(--accent-color-light-mode-variable);
 }
 
@@ -2851,7 +2855,7 @@ body.light .circle-7{
     background-color: var(--accent-color-dark-mode);
 }
 
-body.light .circle-8{
+body.light .circle-8 {
     background-color: var(--accent-color-light-mode-variable);
 }
 
@@ -2865,7 +2869,7 @@ body.light .circle-8{
     color: var(--accent-color-dark-mode);
 }
 
-body.light .planes-ed h3{
+body.light .planes-ed h3 {
     color: var(--accent-color-variable-light-mode);
 }
 
@@ -2889,7 +2893,7 @@ body.light .planes-ed h3{
     color: var(--main-color-dark-mode);
 }
 
-body.light .pdf p{
+body.light .pdf p {
     color: var(--second-color);
 }
 
@@ -2908,7 +2912,7 @@ body.light .pdf p{
     transition: 0.3s ease-in-out;
 }
 
-body.light .sepelio{
+body.light .sepelio {
     background-color: var(--shadow-light-mode);
 }
 
@@ -2942,7 +2946,7 @@ body.light .sepelio{
     font-weight: 200;
 }
 
-body.light .item-servicio h3{
+body.light .item-servicio h3 {
     color: var(--second-color);
     font-weight: 600;
 }
@@ -2952,7 +2956,7 @@ body.light .item-servicio h3{
     color: var(--main-color-dark-mode);
 }
 
-body.light .item-servicio i{
+body.light .item-servicio i {
     color: var(--background-color-variable);
 }
 
@@ -2970,7 +2974,7 @@ body.light .item-servicio i{
     font-weight: 600;
 }
 
-body.light .reseva-turno-sepelio{
+body.light .reseva-turno-sepelio {
     color: var(--background-color-variable);
 }
 
@@ -3071,7 +3075,7 @@ body.light .reseva-turno-sepelio{
     background-color: var(--accent-color-variable-dark-mode);
 }
 
-body.light .circle-10{
+body.light .circle-10 {
     background-color: var(--accent-color-light-mode-variable);
 }
 
@@ -3081,7 +3085,7 @@ body.light .circle-10{
     background-color: var(--accent-color-variable-dark-mode);
 }
 
-body.light .circle-11{
+body.light .circle-11 {
     background-color: var(--accent-color-light-mode-variable);
 }
 
@@ -3110,7 +3114,7 @@ body.light .circle-11{
     transition: 0.3s ease-in-out;
 }
 
-body.light .imagen-asesoria::before{
+body.light .imagen-asesoria::before {
     background-color: rgba(186, 186, 186, 0.596);
 }
 
@@ -3145,7 +3149,7 @@ body.light .imagen-asesoria::before{
     padding-bottom: 2rem;
 }
 
-body.light .asesoramiento h2{
+body.light .asesoramiento h2 {
     color: var(--accent-color-variable-light-mode)
 }
 
@@ -3166,7 +3170,7 @@ body.light .asesoramiento h2{
     padding-bottom: 1rem;
 }
 
-body.light .ase-item h3{
+body.light .ase-item h3 {
     color: var(--second-color);
 }
 
@@ -3195,7 +3199,7 @@ body.light .ase-item h3{
     color: var(--accent-color-variable-dark-mode);
 }
 
-body.light .servicios-sepelio .titulo-servicios-sepelio{
+body.light .servicios-sepelio .titulo-servicios-sepelio {
     color: var(--accent-color-variable-light-mode);
 }
 
@@ -3232,7 +3236,7 @@ body.light .servicios-sepelio .titulo-servicios-sepelio{
     padding: 5rem 0 2rem 0;
 }
 
-body.light .titulo-agua{
+body.light .titulo-agua {
     color: var(--background-color-variable);
 }
 
@@ -3244,7 +3248,7 @@ body.light .titulo-agua{
     position: relative;
 }
 
-.seccion-sin-codigo{
+.seccion-sin-codigo {
     position: relative;
 }
 
@@ -3255,7 +3259,7 @@ body.light .titulo-agua{
     background-color: #26292f;
 }
 
-body.light .circle-tel-vis{
+body.light .circle-tel-vis {
     background-color: var(--shadow-light-mode);
 }
 
@@ -3274,7 +3278,7 @@ body.light .circle-tel-vis{
     transition: opacity 0.3s, visibility 0.3s;
 }
 
-body.light .modal{
+body.light .modal {
     color: var(--background-color-variable);
 }
 
@@ -3321,7 +3325,7 @@ body.light .modal{
     padding: 0.8rem;
 }
 
-.mensaje-error{
+.mensaje-error {
     padding: 0.5rem;
     width: 50%;
     background-color: #ffb5b5;
@@ -3354,7 +3358,7 @@ body.light .modal{
     font-weight: 500;
 }
 
-body.light .texto-sin-codigo{
+body.light .texto-sin-codigo {
     color: var(--background-color-variable);
 }
 
@@ -3424,7 +3428,7 @@ body.light .texto-sin-codigo{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
 }
 
-body.light .bottom-grillas{
+body.light .bottom-grillas {
     box-shadow: 0 8px 32px 0 rgba(203, 203, 203, 0.621);
 }
 
@@ -3445,7 +3449,7 @@ body.light .bottom-grillas{
     color: var(--main-color-dark-mode);
 }
 
-body.light .bottom-grillas-texto{
+body.light .bottom-grillas-texto {
     box-shadow: 0 8px 32px 0 rgba(203, 203, 203, 0.621);
 }
 
@@ -3477,7 +3481,7 @@ body.light .bottom-grillas-texto{
 }
 
 
-body.light .img-grillas{
+body.light .img-grillas {
     filter: brightness(100%);
 }
 
@@ -3625,6 +3629,8 @@ body.light .img-grillas{
         font-size: 3em;
     }
 
+    
+
     /* Programas */
     .container-programas {
         justify-content: center;
@@ -3733,6 +3739,30 @@ body.light .img-grillas{
         gap: 5rem;
     }
 
+    /*Servicios*/
+    .container-servicios{
+        width: 100%;
+    }
+
+    .servicios-ofrecemos{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .container-solo-cards {
+       display:flex;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+
+    .servicios-ofrecemos h2{
+        padding-bottom: 2rem;
+        padding-top: 5rem;
+    }
+    
     /*PÁGINA SOBRE LA EMPRESA*/
     /*seccion empresa*/
     .container-empresa {
